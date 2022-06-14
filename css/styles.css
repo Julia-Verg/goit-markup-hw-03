@@ -30,6 +30,7 @@ body {
   color: var(--accent-color);
   text-decoration: none;
  }
+
 .nav-link {
   text-decoration: none;
   color: var(--primary-text-color);
@@ -46,8 +47,13 @@ body {
       display: flex;
     }
 /* header */
-.nav-content { 
-  background-color: var(--primary-background-color);}
+.nav-content {
+width: 1600px;
+min-height: 80px;
+left: 0px;
+top: 0px;
+background-color: var(--third-background-color);
+}
 .container {
   width: 1600;  
     margin-left: auto;
@@ -66,6 +72,7 @@ display: block;
   height: 31px;
   top: 24px;  
   padding-left: 215px;
+  margin-top: 24px;
   }
   .nav-logo-studio {
    color: #000000;
@@ -101,29 +108,36 @@ display: block;
     text-align: center; 
      align-items: center; 
      width: 1600;
+min-height: 600px;
+left: 0px;
+top: 80px;
+background: var(--secondary-background-color);
   }
   .hero-title {
-    color: #ffffff;
+    color: var(--third-background-color);
     text-transform: uppercase;
     text-align: center;
     font-family: var(--main-font-family); 
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    margin-top: -12px;
    } 
-  .button{
-    border: none;
-    font-family: var(--main-font-family); 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    padding: 0; 
-    
-  }
   .hero-button { 
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
-    color: #ffffff;
-    background-color: var(--accent-color);    
+    color: var(--third-background-color);
+    background-color: var(--accent-color); 
+    font-family: var(--main-font-family);
+     font-weight: 700; 
+     font-size: 16px;
+     line-height: 1.87;
+    width: 200px;
+    height: 50px; 
+    margin-bottom: 200px; 
+    letter-spacing: 0.06em;
+    padding: 0;
   }
   .hero-button:hover,
   .hero-button:focus
@@ -276,24 +290,28 @@ color: rgba(255, 255, 255, 0.6);
   text-decoration: none;}
   
 /* portfolio button */
-.button .portfolio-button{
+/* .button.portfolio-button{
   border: none;
   font-family: var(--main-font-family); 
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 1.62; 
   padding: 0; 
-}
+} */
 .portfolio-button { 
   border: none;
   cursor: pointer;
+  font-family: var(--main-font-family); 
+  font-weight: 500;
+  font-size: 16px;
+  height: 38px;
+  line-height: 1.62;
   color: var(--primary-text-color);
   background-color: #F5F4FA;
+  border-radius: 4px;
   /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
               0px 1px 2px rgba(0, 0, 0, 0.08),
               0px 2px 2px rgba(0, 0, 0, 0.12);  */
-  border-radius: 4px;
-list-style: ;
 }
 .portfolio-button:hover,
 .portfolio-button:focus
